@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+body{
+    color: rgb(0, 238, 255);
+    text-align: center;
+    background: url(fundo2.jpg);
+    background-repeat: repeat;
+    background-size: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "digital";
+    letter-spacing: 2px;
+}
+
+#calculator {
+    max-width: 360px;
+    background: url(fundo.jpg);
+    border-radius: 11px;
+    padding: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 56px;
+    font-size: 19px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background: rgb(33, 97, 1);
+    border: none;
+    box-sizing: border-box;
+    letter-spacing: 5px;
+}
+
+.operator{
+    color: rgb(0, 59, 126)
+}
+
+#ac {
+    color: rgb(153, 0, 0)
+}
+
+.equal {
+    width: calc(50% - 12px);
+}
+
+button {
+    width: calc(25% - 10px);
+    height: 55px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    background: url(botao.jpg);
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 20px -3px black;
+    margin: 10px 5px;
+    font-family: "digital";
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px 1px black;
+}
+
+@font-face {
+    font-family: 'digital';
+    src: url(digital-7.ttf) format("opentype"),url(digital-7.ttf)
+    format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
